@@ -1,0 +1,157 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+	line-height: 1;
+    background-color: rgb(58, 78, 72);
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+body {
+    display: grid;
+    grid-template-rows: 140px 1fr 30px;
+    padding: 20px;
+}
+
+#new-book {
+    width: 156px;
+    height: 30px;
+}
+
+.title {
+    font-size: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.library {
+    background-color: rgb(190, 176, 167);
+    padding: 20px;
+    border-radius: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-template-rows: repeat(auto-fit, 250px);
+    gap: 20px;
+}
+
+.book-card {
+    background-color: white;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+}
+
+.card {
+    padding: 20px;
+    height: 100%;
+    overflow: hidden;
+    color: black;
+    display: grid;
+    grid-template-columns: 1fr 30px;
+    grid-row: 1fr;
+}
+
+.book-info {
+    grid-row: 1;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.bin {
+    background-color: #cc3f0c;
+    height: 30px;
+    border: none;
+    border-radius: 30px;
+    grid-column: 2;
+}
+
+.read-toggle {
+    height: 50px;
+    border-radius: 20px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border: none;
+    font-size: 1rem;
+    font-weight: 900;
+}
+
+.read-toggle-read {
+    background-color: #33673b;
+    color: white;
+}
+
+.read-toggle-notread {
+    background-color: #cc3f0c;
+    color: white;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    width: 300px;
+}
+
+#read {
+    align-self: baseline;
+    margin-left: 0px;
+}
+
+input {
+    margin-bottom: 20px;
+    margin-top: 3px;
+}
+
+dialog {
+    border-radius: 20px;
+    border: 1px black solid;
+}
